@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamGenerator</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="../src/app.js" defer></script>
+</head>
+
+<body>
+    <div class="header">TeamGeneraTor</div>
+    <div class="in_outContainer">
+        <div class="containerInput">
+            <input id="spielerEingabe" type="text" placeholder="playerName">
+            <button id="spielerHinzufuegen">Add player</button>
+            <button id="teamErstellen">Gen teams</button>
+
+            <button id="coinToss">coinToss</button>
+
+            <button id="listeLeeren">Clear List</button>
+        </div>
+        <div class="containerTeams">
+            <div id="preTeamTable"></div>
+            <div id="team1Container" class="teamContainer"></div>
+            <div id="team2Container" class="teamContainer"></div>
+            <div id="parentContainer"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
