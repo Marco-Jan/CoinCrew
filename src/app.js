@@ -7,7 +7,9 @@ document.getElementById('coinToss').addEventListener('click', Münzwurf);
 function Münzwurf() {
     let x = "Kopf";
     let y = "Zahl";
-    document.getElementById('preTeamTable', 'team1Container', 'team2Container').innerHTML = "";
+    document.getElementById('preTeamTable').innerHTML = "";
+    document.getElementById('team1Container').innerHTML = "";
+    document.getElementById('team2Container').innerHTML = "";
 
 
     setTimeout(() => {
@@ -81,7 +83,10 @@ document.getElementById('listeLeeren').addEventListener('click', listeLeeren);
 
 function listeLeeren() {
     spielerListe = [];
-    document.getElementById('preTeamTable', 'parentContainer', 'team1Container', 'team2Container').innerHTML = "";
+    document.getElementById('preTeamTable').innerHTML = "";
+    document.getElementById('parentContainer').innerHTML = "";
+    document.getElementById('team1Container').innerHTML = "";
+    document.getElementById('team2Container').innerHTML = "";
     console.log('Spielerliste geleert:', spielerListe);
 }
 
