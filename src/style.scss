@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 100px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 80px;
+}
+.in_outContainer{
+    display: flex;
+    justify-content: center;
+
+}
+.containerInput {
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin: 50px;
+    font-size: 50px;
+}
+#coinToss{
+    background-color: #4e4caf;
+    border: none;
+    color: white;
+    width: 180px;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#teamErstellen{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 180px;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#preTeamTable{
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+#spielerEingabe{
+    background-color: #b4ced6;
+    border: none;
+    color: rgb(71, 66, 66);
+    width: 180px;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#spielerHinzufuegen{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#listeLeeren{
+    background-color: #d83c21;
+    border: none;
+    color: white;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.containerTeams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px;
+    font-size: 100px;
+}
+
+
+/* Basis-Stile, die für alle Bildschirmgrößen gelten */
+
+/* Hier fügen wir die Media Queries hinzu */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 40px; /* Kleinere Schriftgröße für Handys */
+    }
+
+    .header {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .in_outContainer {
+        flex-direction: column; /* Elemente untereinander statt nebeneinander */
+    }
+
+    .containerInput, .containerTeams {
+        padding: 20px;
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    .containerInput input[type="text"], 
+    .containerInput button {
+        width: 150px; /* Anpassung der Breite für kleinere Bildschirme */
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #preTeamTable, #team1Container, #team2Container {
+        font-size: 20px;
+    }
+}
