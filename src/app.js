@@ -1,5 +1,5 @@
 
-
+import './style.css';
 
 document.getElementById('coinToss').addEventListener('click', Münzwurf);
 
